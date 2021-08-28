@@ -1,0 +1,8 @@
+name: Run CI checks
+on: [push]
+jobs:
+  Basic-bash-linter:
+    runs-on: ubuntu-latest
+    steps:    
+      - name: Run Shellcheck
+        uses: azohra/shell-linter@latest
